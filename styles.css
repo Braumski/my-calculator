@@ -39,7 +39,7 @@ button {
   gap: 8px;
 }
 
-.calculator-output {
+#calculator-output {
   box-sizing: border-box;
   display: flex;
   align-items: end;

@@ -1,19 +1,30 @@
-import { evaluate } from "mathjs";
 
-let output = document.getElementsByClassName("calculator-output")[0]
+// Uses the mathjs library from a cdn
 
 const btns = document.querySelectorAll("button");
 
-
-/* I used a switch statement for buttons and read the id of the button as it was clicked
- I wasnt sure if I should haves stored each button into a variable or used a switch statement*/
 btns.forEach(button => {
   button.addEventListener("click", () => {
+    const output = document.getElementById("calculator-output");
+    const value = button.value;
 
-    if (button.id === "=") {
-      output = math.evaluate(output);
+
+    // I tried using a switch statement, but for some reason you cant use compare a regex expression there
+
+    if (/[0-9]/.test(value)) {
+      output.insertAdjacentText("beforeend", value);
+    } else if (value === "=") {
+      output.innerText = math.evaluate(output.innerText);
+    } else if (value === "<<") {
+      output.innerText = output.innerText.slice(0, -1);
+    } else if (/[\*\+\-x\/]/.test(value)) {
+      if (/[\*\+\-x\/]$/.test(output.innerText)) {
+
+      } else { output.insertAdjacentText("beforeend", value); }
+
+    } else if (value === "clear") {
+      output.innerText = "";
     }
-    output.insertAdjacentText("beforeend", button.id);
-
   })
+
 })
