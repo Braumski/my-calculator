@@ -1,7 +1,7 @@
 html,
 body {
   font-family: "Livvic", sans-serif;
-  color: black;
+  color: rgb(37, 45, 48);
   height: 100%;
   margin: 0;
   display: flex;
@@ -19,6 +19,8 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
+
 
 .calculator,
 .keypad,
@@ -71,11 +73,36 @@ button {
   flex: 1;
   font-size: 30px;
   border-radius: 6px;
-  background-color: #4a6977;
+  background-color: rgb(75, 105, 119);
 }
 
 .keypad>.row>button:hover {
   cursor: default;
-  background-color: #54717e;
+  background-color: hsla(201, 18%, 54%, 0.675);
   outline: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+.keypad>.row>button:active {
+  background-color: rgb(138, 159, 171);
+
+}
+
+/* I am a genius */
+/* This represents the lower left quadrant of the keypad for styling */
+.keypad>.row:nth-child(n + 2)>button:nth-child(-n + 3) {
+  color: rgb(37, 45, 48);
+  background-color: rgb(65, 92, 103);
+}
+
+.keypad>.row:nth-child(n + 2)>button:nth-child(-n + 3):hover {
+  background-color: rgb(72, 99, 110);
+}
+
+.keypad>.row:nth-child(n + 2)>button:nth-child(-n + 3):active {
+  background-color: rgb(63, 84, 97);
+}
+
+
+#equals {
+  background-color: rgb(57, 82, 96);
 }
