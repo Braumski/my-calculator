@@ -1,4 +1,4 @@
-
+// First project without any tutorial guide 🎊
 // Uses the mathjs library from a cdn
 
 const btns = document.querySelectorAll("button");
