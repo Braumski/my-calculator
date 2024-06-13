@@ -8,7 +8,6 @@ btns.forEach(button => {
     const output = document.getElementById("calculator-output");
     const value = button.value;
 
-
     // I tried using a switch statement, but for some reason you cant use compare a regex expression there
 
     if (/[0-9]/.test(value)) {
