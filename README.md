@@ -1,4 +1,4 @@
-# Calculator 🧮
+# Calculator 🧮  (please view in chrome)
 
 ## https://braumski.github.io/my-calculator/
 
