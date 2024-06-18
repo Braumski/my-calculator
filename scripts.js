@@ -3,12 +3,12 @@
 
 const btns = document.querySelectorAll("button");
 const output = document.getElementById("calculator-output");
-const value = button.value;
+
 
 btns.forEach(button => {
   button.addEventListener("click", () => {
 
-
+    const value = button.value;
     // I tried using a switch statement, but for some reason you cant use compare a regex expression there
 
     if (/[0-9]/.test(value)) {
