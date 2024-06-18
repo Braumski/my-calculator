@@ -1,4 +1,6 @@
-## Calculator 🧮
+# Calculator 🧮
+
+## https://braumski.github.io/my-calculator/
 
 Just a simple calculator to get familiar with Javascript and interactive content
 
